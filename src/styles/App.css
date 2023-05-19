@@ -3,7 +3,7 @@
   src: url('./font-family/hk-grotesk-medium.ttf') format('truetype');
 }
 
-.ErrorPage {
+.ErrorPage{
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -12,12 +12,12 @@
   height: 100vh;
 }
 
-.ErrorPage h1 {
+.ErrorPage h1{
   font-size: 50px;
   margin-bottom: 20px;
 }
 
-.ErrorPage p {
+.ErrorPage p{
   font-size: 20px;
   margin-bottom: 20px;
 }
@@ -27,32 +27,6 @@
   justify-content: space-between;
 }
 
-/* Responsive CSS */
-@media (max-width: 768px) {
-  /* Styles for tablets */
-  .ErrorPage h1 {
-    font-size: 40px;
-    margin-bottom: 15px;
-  }
-
-  .ErrorPage p {
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Styles for mobile devices */
-  .ErrorPage h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-
-  .ErrorPage p {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-}
 #navbar ul {
   /* position: absolute; */
   display: flex;
@@ -62,7 +36,7 @@
   gap: 2.5vw;
   /* right: 6rem; */
   /* padding: 1.5rem 1.5rem 1.5rem 2.5rem; */
-  padding: 0.78vw 0.78vw 0.78vw 1.3vw;
+  padding: .78vw .78vw .78vw 1.3vw;
   border-radius: 2.6vw;
 }
 
@@ -73,49 +47,18 @@
   text-decoration: none;
 }
 
-.active {
+.active{
   font-weight: bold;
 }
 
-/* Responsive CSS */
-@media (max-width: 768px) {
-  /* Styles for tablets */
-  #navbar ul {
-    gap: 20px;
-    padding: 10px 10px 10px 20px;
-    border-radius: 20px;
-  }
-
-  #navbar ul li * {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Styles for mobile devices */
-  #navbar ul {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-    border-radius: 10px;
-  }
-
-  #navbar ul li {
-    margin-bottom: 10px;
-  }
-
-  #navbar ul li * {
-    font-size: 14px;
-  }
-}
 .loginSignUpBtn {
   display: inline-block;
   background-color: var(--btnColor);
-  border-radius: 0.4vw;
+  border-radius: .4vw;
   width: 5.2vw;
   text-align: center;
-  padding: 0.5vw 0;
-  margin-right: 0.5vw;
+  padding: .5vw 0 .5vw 0;
+  margin-right: .5vw;
 }
 
 #logo {
@@ -138,58 +81,6 @@
   width: 37.3%;
 }
 
-/* Responsive CSS */
-@media (max-width: 768px) {
-  /* Styles for tablets */
-  .loginSignUpBtn {
-    width: 80px;
-    padding: 10px 0;
-    margin-right: 10px;
-    border-radius: 10px;
-  }
-
-  #logo {
-    margin: 20px 0 0 30px;
-    height: 40px;
-    width: 40px;
-  }
-
-  #homeContainer {
-    margin: 50px 40px 0 50px;
-  }
-
-  #meetingImg {
-    height: 40%;
-    width: 60%;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Styles for mobile devices */
-  .loginSignUpBtn {
-    width: 100px;
-    padding: 12px 0;
-    margin-right: 12px;
-    border-radius: 12px;
-  }
-
-  #logo {
-    margin: 10px 0 0 15px;
-    height: 30px;
-    width: 30px;
-  }
-
-  #homeContainer {
-    flex-direction: column;
-    justify-content: center;
-    margin: 30px 20px 0 30px;
-  }
-
-  #meetingImg {
-    height: 30%;
-    width: 80%;
-  }
-}
 #homeTxt {
   width: 39.06vw;
   font-family: 'ABeeZee';
@@ -222,38 +113,7 @@
   z-index: -999;
 }
 
-/* Responsive CSS */
-@media (max-width: 768px) {
-  /* Styles for tablets */
-  #homeTxt {
-    width: 80%;
-    font-size: 30px;
-  }
-
-  #homeCircle,
-  #homeCircleScnd {
-    height: 50vw;
-    width: 50vw;
-    right: -8vw;
-    top: 8vw;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Styles for mobile devices */
-  #homeTxt {
-    width: 90%;
-    font-size: 24px;
-  }
-
-  #homeCircle,
-  #homeCircleScnd {
-    height: 60vw;
-    width: 60vw;
-    right: -5vw;
-    top: 5vw;
-  }
-}
+ /*  Login container */
 .login-container {
   display: flex;
   align-items: center;
@@ -261,17 +121,18 @@
   height: 100vh;
 }
 
+
 .shadow-box {
   display: flex;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 76px;
   width: 850px;
   height: 550px;
   margin-top: -110px;
 }
 
+/* Left side container of login page */
 .left-side {
   flex: 1;
   display: flex;
@@ -281,43 +142,6 @@
   border-bottom-left-radius: 26px;
   border-top-left-radius: 26px;
 }
-
-/* Responsive CSS */
-@media (max-width: 768px) {
-  /* Styles for tablets */
-  .shadow-box {
-    width: 90%;
-    height: 400px;
-    margin-top: -80px;
-    border-radius: 40px;
-  }
-
-  .left-side {
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Styles for mobile devices */
-  .login-container {
-    padding: 20px;
-  }
-
-  .shadow-box {
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-    border-radius: 0;
-    box-shadow: none;
-  }
-
-  .left-side {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-  }
-}
-
 #element1Img {
   height: 61%;
   width: 84.3%;
@@ -327,7 +151,6 @@
   border-top-left-radius: 26px;
   z-index: 1;
 }
-
 .left-side-logo {
   height: 15%;
   width: 47.3%;
@@ -338,110 +161,50 @@
   z-index: 0;
 }
 
+
 #logintxt_leftside {
   position: fixed;
   bottom: 265px;
   left: -351px;
-  right: 0;
+  right: 0px;
   text-align: center;
   font-size: 17px;
   font-family: 'HK Grotesk Medium';
 }
 
+
+/* Right side container of login page */
 .counsellor-text-container {
   position: absolute;
   top: 40px;
   font-size: 20px;
   background-color: var(--secPageColor);
   border-radius: 2.6vw;
-  padding: 0.78vw;
-  font-family: 'HK Grotesk Bold';
+  padding: .78vw;
+  font-family:'HK Grotesk Bold';
   width: 74%;
   text-align: center;
-  color: #050A30;
+  color:#050A30;
 }
-
-/* Responsive CSS */
-@media (max-width: 768px) {
-  /* Styles for tablets */
-  #element1Img {
-    height: 40%;
-    width: 80%;
-    margin-top: -150px;
-    margin-right: 50px;
-  }
-
-  .left-side-logo {
-    height: 12%;
-    width: 40%;
-    bottom: 30%;
-    right: 15%;
-  }
-
-  #logintxt_leftside {
-    bottom: 150px;
-    left: -250px;
-    font-size: 14px;
-  }
-
-  .counsellor-text-container {
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 20px;
-    width: 70%;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Styles for mobile devices */
-  #element1Img {
-    height: 30%;
-    width: 100%;
-    margin-top: -100px;
-    margin-right: 0;
-    border-top-left-radius: 0;
-  }
-
-  .left-side-logo {
-    height: 10%;
-    width: 80%;
-    bottom: 20px;
-    right: 10%;
-    border-top-left-radius: 0;
-  }
-
-  #logintxt_leftside {
-    bottom: 80px;
-    left: -200px;
-    font-size: 12px;
-  }
-
-  .counsellor-text-container {
-    font-size: 14px;
-    padding: 8px;
-    border-radius: 10px;
-    width: 90%;
-  }
-}
-.lets-signin-text-container {
-  position: absolute;
+.lets-signin-text-container{
+  position:absolute;
   font-size: 17px;
-  color: #050A30;
+  color:#050A30;
   text-align: center;
   padding: 1.6vw;
-  top: 95px;
-}
+  top:95px;
 
-.needhelp-container {
-  position: absolute;
+}
+.needhelp-container{
+  position:absolute;
   font-size: 17px;
-  color: #050A30;
+  color:#050A30;
   text-align: center;
   padding: 1.6vw;
-  bottom: 10px;
-  font-family: 'HK Grotesk Medium';
-}
+  bottom:10px;
+  font-family:'HK Grotesk Medium';
 
+}
 .right-side {
   flex: 1;
   display: flex;
@@ -461,9 +224,10 @@ form {
   padding-top: 130px;
 }
 
+
 input[type="text"],
 input[type="password"] {
-  width: 100%;
+  width: 112%;
   padding: 8px;
   margin: 11px 0;
   font-size: 16px;
@@ -472,41 +236,6 @@ input[type="password"] {
   outline: none;
 }
 
-/* Responsive CSS */
-@media (max-width: 768px) {
-  /* Styles for tablets */
-  .lets-signin-text-container,
-  .needhelp-container {
-    font-size: 14px;
-    padding: 16px;
-  }
-
-  form {
-    padding-top: 100px;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Styles for mobile devices */
-  .lets-signin-text-container,
-  .needhelp-container {
-    font-size: 12px;
-    padding: 12px;
-  }
-
-  form {
-    padding-top: 80px;
-  }
-
-  input[type="text"],
-  input[type="password"] {
-    width: 100%;
-    padding: 8px;
-    margin: 8px 0;
-    font-size: 14px;
-    border-radius: 20px;
-  }
-}
 button[type="submit"] {
   width: 69%;
   padding: 16px;
@@ -524,13 +253,15 @@ button[type="submit"]:hover {
   background-color: #12229D;
 }
 
-.loginOptions {
+.loginOptions{
   display: grid;
   text-align: center;
   font-family: 'HK Grotesk Medium';
   font-size: 12px;
   margin-top: 39px;
+
 }
+
 
 #googleicon {
   margin-right: 10px;
@@ -540,12 +271,16 @@ button[type="submit"]:hover {
 #windowicon {
   margin: 0 auto;
   width: 22%;
+
 }
 
 #githubicon {
   margin-left: 10px;
   width: 22%;
 }
+
+
+/* Sign up container*/
 
 .signup-container {
   display: flex;
@@ -554,44 +289,6 @@ button[type="submit"]:hover {
   height: 100vh;
 }
 
-/* Responsive CSS */
-@media (max-width: 768px) {
-  /* Styles for tablets */
-  button[type="submit"] {
-    width: 80%;
-    padding: 12px;
-    margin: 6px 0;
-    bottom: 20px;
-    font-size: 14px;
-  }
-
-  .loginOptions {
-    font-size: 10px;
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Styles for mobile devices */
-  button[type="submit"] {
-    width: 90%;
-    padding: 12px;
-    margin: 6px 0;
-    bottom: 15px;
-    font-size: 12px;
-  }
-
-  .loginOptions {
-    font-size: 10px;
-    margin-top: 15px;
-  }
-
-  #googleicon,
-  #windowicon,
-  #githubicon {
-    width: 18%;
-  }
-}
 .parent {
   position: relative;
 }
@@ -605,28 +302,29 @@ button[type="submit"]:hover {
   width: 56px;
 }
 
-.signuptxt2 {
+.signuptxt2{
   position: absolute;
   top: 43px;
   left: 39px;
   font-size: 17px;
   font-family: 'HK Grotesk Medium';
   width: 140px;
+  
 }
 
 .signup-line {
   border-top: 1px solid black;
-  position: relative;
-  top: 70px;
-  left: 1%;
-  width: 101%;
-  height: 1px;
+position: relative;
+top: 70px;
+left: 1%;
+width: 101%;
+height: 1px;
 }
 
 .form-container {
   display: flex;
   width: 98%;
-  height: 77%;
+    height: 77%;;
   margin-top: -2%;
   margin-left: -96%;
   flex-wrap: wrap;
@@ -634,59 +332,7 @@ button[type="submit"]:hover {
   align-items: center;
 }
 
-/* Responsive CSS */
-@media (max-width: 768px) {
-  /* Styles for tablets */
-  .signuptxt {
-    font-size: 14px;
-    top: 17px;
-    left: 50px;
-    width: 45px;
-  }
-
-  .signuptxt2 {
-    font-size: 14px;
-    top: 34px;
-    left: 30px;
-    width: 120px;
-  }
-
-  .signup-line {
-    top: 55px;
-    height: 1px;
-  }
-
-  .form-container {
-    margin-top: -4%;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Styles for mobile devices */
-  .signuptxt {
-    font-size: 12px;
-    top: 14px;
-    left: 40px;
-    width: 40px;
-  }
-
-  .signuptxt2 {
-    font-size: 12px;
-    top: 28px;
-    left: 20px;
-    width: 100px;
-  }
-
-  .signup-line {
-    top: 42px;
-    height: 1px;
-  }
-
-  .form-container {
-    margin-top: -6%;
-  }
-}
-input.firstname-text[type="text"] {
+input.firstname-text[type="text"]{
   width: 38%;
   padding: 12px;
   margin: 11px 0;
@@ -694,13 +340,13 @@ input.firstname-text[type="text"] {
   border: 2px solid #D8D8D8;
   border-radius: 25px;
   outline: none;
-  position: relative;
+  position:relative;
   top: -33px;
   left: -22%;
   background-color: #D8D8D8;
 }
 
-input.surname-text[type="text"] {
+input.surname-text[type="text"]{
   width: 38%;
   padding: 12px;
   margin: 6px 0;
@@ -714,7 +360,7 @@ input.surname-text[type="text"] {
   background-color: #D8D8D8;
 }
 
-input[type="email"] {
+input[type="email"]{
   width: 88%;
   padding: 12px;
   margin: 13px 0;
@@ -728,10 +374,10 @@ input[type="email"] {
   right: -3%;
 }
 
-input.password-text[type="password"] {
-  width: 88%;
-  padding: 12px;
-  margin: 6px 0;
+input.password-text[type="password"]{
+  width:88%;
+  padding:12px;
+  margin:6px 0;
   font-size: 16px;
   border: 2px solid #D8D8D8;
   background-color: #D8D8D8;
@@ -742,65 +388,7 @@ input.password-text[type="password"] {
   right: -3%;
 }
 
-/* Responsive CSS */
-@media (max-width: 768px) {
-  /* Styles for tablets */
-  input.firstname-text[type="text"],
-  input.surname-text[type="text"],
-  input[type="email"],
-  input.password-text[type="password"] {
-    width: 80%;
-    font-size: 14px;
-    top: -25px;
-    left: -10%;
-    right: auto;
-  }
-
-  input.surname-text[type="text"] {
-    top: -96px;
-    right: -15%;
-  }
-
-  input[type="email"] {
-    top: -100px;
-    right: -2%;
-  }
-
-  input.password-text[type="password"] {
-    top: -105px;
-    right: -2%;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Styles for mobile devices */
-  input.firstname-text[type="text"],
-  input.surname-text[type="text"],
-  input[type="email"],
-  input.password-text[type="password"] {
-    width: 90%;
-    font-size: 12px;
-    top: -18px;
-    left: -5%;
-    right: auto;
-  }
-
-  input.surname-text[type="text"] {
-    top: -84px;
-    right: -10%;
-  }
-
-  input[type="email"] {
-    top: -88px;
-    right: -2%;
-  }
-
-  input.password-text[type="password"] {
-    top: -93px;
-    right: -2%;
-  }
-}
-input[type="date"] {
+input[type="date"]{
   width: 38%;
   padding: 12px;
   margin: 6px 0;
@@ -810,11 +398,13 @@ input[type="date"] {
   border-radius: 25px;
   outline: none;
   position: relative;
-  left: -22%;
+  left:-22%;
   top: -112px;
+
+
 }
 
-select[type="gender"] {
+select[type="gender"]{
   width: 41%;
   padding: 12px;
   margin: 6px 0;
@@ -828,8 +418,7 @@ select[type="gender"] {
   background-color: #D8D8D8;
 }
 
-label[for="counsellor-option"],
-label[for="student-option"] {
+label[for="counsellor-option"]{
   width: 38%;
   padding: 12px;
   font-family: 'HK Grotesk Medium';
@@ -839,53 +428,33 @@ label[for="student-option"] {
   border-radius: 25px;
   outline: none;
   position: relative;
+  top: 64px;
+  right: 52%;
   background-color: #D8D8D8;
 }
 
-/* Responsive CSS */
-@media (max-width: 768px) {
-  /* Styles for tablets */
-  input[type="date"],
-  select[type="gender"],
-  label[for="counsellor-option"],
-  label[for="student-option"] {
-    width: 80%;
-    font-size: 14px;
-    left: -10%;
-    right: auto;
-  }
-
-  label[for="student-option"] {
-    top: 226px;
-    right: -10%;
-  }
+label[for="student-option"]{
+  width: 38%;
+  padding: 12px;
+  margin: 19px 0;
+  font-family: 'HK Grotesk Medium';
+  font-size: 16px;
+  border: 2px solid #D8D8D8;
+  border-radius: 25px;
+  outline: none;
+  position: relative;
+  top: 246px;
+  right: 102%;
+  background-color: #D8D8D8;
 }
 
-@media (max-width: 480px) {
-  /* Styles for mobile devices */
-  input[type="date"],
-  select[type="gender"],
-  label[for="counsellor-option"],
-  label[for="student-option"] {
-    width: 90%;
-    font-size: 12px;
-    left: -5%;
-    right: auto;
-  }
-
-  label[for="student-option"] {
-    top: 216px;
-    right: -5%;
-  }
-}
-label[for="are-you-student-or-counsellor"] {
+label[for="are-you-student-or-counsellor"]{
   font-family: 'HK Grotesk Medium';
   font-size: 14px;
   position: relative;
   top: -162px;
-  right: 29%;
+  right: 29%;;
 }
-
 button.submit-button[type="submit"] {
   width: 69%;
   padding: 16px;
@@ -907,25 +476,8 @@ button.submit-button[type="submit"]:hover {
   background-color: #12229D;
 }
 
-/* Responsive CSS */
-@media (max-width: 768px) {
-  /* Styles for tablets */
-  label[for="are-you-student-or-counsellor"],
-  button.submit-button[type="submit"] {
-    font-size: 12px;
-    right: -15%;
-    left: auto;
-  }
+
+@media screen and (max-width:600px)
+{
+  
 }
-
-@media (max-width: 480px) {
-  /* Styles for mobile devices */
-  label[for="are-you-student-or-counsellor"],
-  button.submit-button[type="submit"] {
-    font-size: 10px;
-    right: -10%;
-    left: auto;
-  }
-}
-
-
